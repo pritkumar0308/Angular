@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './time-record-get-save/product-list.component';
+import { ProductListComponent } from './time-record-get-save/time-record-get-save.component';
 
 @NgModule({
   imports: [
