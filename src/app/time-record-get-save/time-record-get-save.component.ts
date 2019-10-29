@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { products } from '../products';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-time-record-get-save',
@@ -9,9 +10,13 @@ import { products } from '../products';
 })
 export class ProductListComponent {
   products = products;
-
+constructor(private httpClient: HttpClient){}
   share() {
     window.alert('The product has been shared!');
+  }
+  getDetails(){
+    console.log("btn submitted..");
+     return this.httpClient.get(`http://192.168.99.100:8080/records?email=aliriza.saral@gmail.com&length=10`);
   }
 }
 
