@@ -1,8 +1,5 @@
-
-
-
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from '../app.service';
 
 
 @Component({
@@ -12,6 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class ProductListComponent {
   
+constructor(private apiService: ApiService){}
 
   
 }
